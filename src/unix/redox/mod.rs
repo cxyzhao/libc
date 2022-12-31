@@ -112,8 +112,6 @@ s! {
         pub dli_saddr: *mut ::c_void,
     }
 
-    #[repr(C)]
-    #[repr(packed)]
     pub struct epoll_event {
         pub events: u32,
         pub u64: u64,

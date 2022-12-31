@@ -211,16 +211,14 @@ s! {
 }
 
 s_no_extra_traits! {
-    #[cfg_attr(
-        any(
-            all(
-                target_arch = "x86",
-                not(target_env = "musl"),
-                not(target_os = "android")),
-            target_arch = "x86_64"),
-        repr(packed))]
-    #[repr(C)]
-    #[repr(packed)]
+    // #[cfg_attr(
+    //     any(
+    //         all(
+    //             target_arch = "x86",
+    //             not(target_env = "musl"),
+    //             not(target_os = "android")),
+    //         target_arch = "x86_64"),
+    //     repr(packed))]
     pub struct epoll_event {
         pub events: u32,
         pub u64: u64,
