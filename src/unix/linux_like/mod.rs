@@ -221,7 +221,6 @@ s_no_extra_traits! {
         repr(packed))]
     #[repr(C)]
     #[repr(packed)]
-    #[derive(Default, Copy, Clone, Debug)]
     pub struct epoll_event {
         pub events: u32,
         pub u64: u64,
