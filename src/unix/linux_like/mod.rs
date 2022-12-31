@@ -219,6 +219,9 @@ s_no_extra_traits! {
                 not(target_os = "android")),
             target_arch = "x86_64"),
         repr(packed))]
+    #[repr(C)]
+    #[repr(packed)]
+    #[derive(Default, Copy, Clone, Debug)]
     pub struct epoll_event {
         pub events: u32,
         pub u64: u64,
